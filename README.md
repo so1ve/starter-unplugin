@@ -15,7 +15,6 @@ $ pnpm add pkg-name
 ## 🚀 Usage
 
 ```ts
-
 ```
 
 ## 📝 License
