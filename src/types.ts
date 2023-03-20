@@ -1,2 +1,2 @@
-export interface Options {
+export type Options = {
 }
