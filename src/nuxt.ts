@@ -1,14 +1,24 @@
+import { addVitePlugin, addWebpackPlugin } from "@nuxt/kit";
+import type { ModuleDefinition } from "@nuxt/schema";
+
+import { name, version } from "../package.json";
+
+import VitePlugin from "./vite";
+import WebpackPlugin from "./webpack";
 import type { Options } from "./types";
-import unplugin from ".";
 
-export default function (options: Options = {}, nuxt: any) {
-  nuxt.hook("webpack:config", async (config: any) => {
-    config.plugins ||= [];
-    config.plugins.unshift(unplugin.webpack(options));
-  });
-
-  nuxt.hook("vite:extendConfig", async (config: any) => {
-    config.plugins ||= [];
-    config.plugins.push(unplugin.vite(options));
-  });
-}
+export default {
+  meta: {
+    name,
+    version,
+    configKey: "pkg-name",
+    compatibility: {
+      bridge: true,
+    },
+  },
+  defaults: {},
+  setup (options) {
+    addVitePlugin(VitePlugin(options));
+    addWebpackPlugin(WebpackPlugin(options));
+  },
+} as ModuleDefinition<Options>;
