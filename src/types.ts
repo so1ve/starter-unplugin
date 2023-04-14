@@ -1,2 +1,2 @@
-export type Options = {
-};
+export interface Options {
+}

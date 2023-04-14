@@ -17,7 +17,7 @@ export default {
     },
   },
   defaults: {},
-  setup (options) {
+  setup(options) {
     addVitePlugin(VitePlugin(options));
     addWebpackPlugin(WebpackPlugin(options));
   },
