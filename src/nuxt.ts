@@ -5,7 +5,7 @@ import { name, version } from "../package.json";
 
 import VitePlugin from "./vite";
 import WebpackPlugin from "./webpack";
-import type { Options } from "./types";
+import type { Options } from "./core/types";
 
 export default defineNuxtModule<Options>({
   meta: {
