@@ -21,7 +21,9 @@ import PkgName from "pkg-name/vite";
 
 export default defineConfig({
   plugins: [
-    PkgName({/* options */}),
+    PkgName({
+      /* options */
+    }),
   ],
 });
 ```
@@ -37,7 +39,9 @@ import PkgName from "pkg-name/rollup";
 
 export default {
   plugins: [
-    PkgName({/* options */}),
+    PkgName({
+      /* options */
+    }),
     // other plugins
   ],
 };
@@ -54,7 +58,9 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require("pkg-name/webpack")({/* options */}),
+    require("pkg-name/webpack")({
+      /* options */
+    }),
   ],
 };
 ```
@@ -81,7 +87,9 @@ export default defineNuxtConfig({
 module.exports = {
   configureWebpack: {
     plugins: [
-      require("pkg-name/webpack")({/* options */}),
+      require("pkg-name/webpack")({
+        /* options */
+      }),
     ],
   },
 };
@@ -96,7 +104,12 @@ module.exports = {
 // quasar.conf.js [Vite]
 module.exports = {
   vitePlugins: [
-    ["pkg-name/vite", {/* options */}],
+    [
+      "pkg-name/vite",
+      {
+        /* options */
+      },
+    ],
   ],
 };
 ```
@@ -104,11 +117,14 @@ module.exports = {
 ```ts
 // quasar.conf.js [Webpack]
 const PkgNamePlugin = require("pkg-name/webpack");
+
 module.exports = {
   build: {
     chainWebpack(chain) {
       chain.plugin("pkg-name").use(
-        PkgNamePlugin({/* options */}),
+        PkgNamePlugin({
+          /* options */
+        })
       );
     },
   },
