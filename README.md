@@ -5,9 +5,9 @@
 ## 📦 Installation
 
 ```bash
-$ npm install pkg-name
-$ yarn add pkg-name
-$ pnpm add pkg-name
+$ npm install -D pkg-name
+$ yarn add -D pkg-name
+$ pnpm add -D pkg-name
 ```
 
 ## 🚀 Usage
