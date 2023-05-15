@@ -124,7 +124,7 @@ module.exports = {
       chain.plugin("pkg-name").use(
         PkgNamePlugin({
           /* options */
-        })
+        }),
       );
     },
   },
