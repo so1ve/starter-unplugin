@@ -28,13 +28,12 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs"
-    },"./astro": {
+    },
+    "./astro": {
       "types": "./dist/astro.d.ts",
       "require": "./dist/astro.cjs",
       "import": "./dist/astro.js"
     },
-
-
     "./vite": {
       "types": "./dist/vite.d.ts",
       "require": "./dist/vite.cjs",
