@@ -3,9 +3,9 @@ import type { ModuleDefinition } from "@nuxt/schema";
 
 import { name, version } from "../package.json";
 
+import type { Options } from "./core/types";
 import VitePlugin from "./vite";
 import WebpackPlugin from "./webpack";
-import type { Options } from "./core/types";
 
 export default defineNuxtModule<Options>({
   meta: {
