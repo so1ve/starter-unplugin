@@ -5,13 +5,13 @@
   "author": "Ray <i@mk1.io> (@so1ve)",
   "description": "",
   "keywords": [
-    "unplugin",
     "astro",
-    "vite",
-    "webpack",
-    "rollup",
     "nuxt",
-    "transform"
+    "rollup",
+    "transform",
+    "unplugin",
+    "vite",
+    "webpack"
   ],
   "homepage": "https://github.com/so1ve/pkg-name#readme",
   "repository": {
