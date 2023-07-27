@@ -20,11 +20,11 @@ $ pnpm add -D pkg-name
 import PkgName from "pkg-name/vite";
 
 export default defineConfig({
-  plugins: [
-    PkgName({
-      /* options */
-    }),
-  ],
+	plugins: [
+		PkgName({
+			/* options */
+		}),
+	],
 });
 ```
 
@@ -38,17 +38,16 @@ export default defineConfig({
 import PkgName from "pkg-name/rollup";
 
 export default {
-  plugins: [
-    PkgName({
-      /* options */
-    }),
-    // other plugins
-  ],
+	plugins: [
+		PkgName({
+			/* options */
+		}),
+		// other plugins
+	],
 };
 ```
 
 <br></details>
-
 
 <details>
 <summary>Webpack</summary><br>
@@ -56,12 +55,12 @@ export default {
 ```ts
 // webpack.config.js
 module.exports = {
-  /* ... */
-  plugins: [
-    require("pkg-name/webpack")({
-      /* options */
-    }),
-  ],
+	/* ... */
+	plugins: [
+		require("pkg-name/webpack")({
+			/* options */
+		}),
+	],
 };
 ```
 
@@ -73,7 +72,7 @@ module.exports = {
 ```ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  modules: ["pkg-name/nuxt"],
+	modules: ["pkg-name/nuxt"],
 });
 ```
 
@@ -85,13 +84,13 @@ export default defineNuxtConfig({
 ```ts
 // vue.config.js
 module.exports = {
-  configureWebpack: {
-    plugins: [
-      require("pkg-name/webpack")({
-        /* options */
-      }),
-    ],
-  },
+	configureWebpack: {
+		plugins: [
+			require("pkg-name/webpack")({
+				/* options */
+			}),
+		],
+	},
 };
 ```
 
@@ -103,14 +102,14 @@ module.exports = {
 ```ts
 // quasar.conf.js [Vite]
 module.exports = {
-  vitePlugins: [
-    [
-      "pkg-name/vite",
-      {
-        /* options */
-      },
-    ],
-  ],
+	vitePlugins: [
+		[
+			"pkg-name/vite",
+			{
+				/* options */
+			},
+		],
+	],
 };
 ```
 
@@ -119,15 +118,15 @@ module.exports = {
 const PkgNamePlugin = require("pkg-name/webpack");
 
 module.exports = {
-  build: {
-    chainWebpack(chain) {
-      chain.plugin("pkg-name").use(
-        PkgNamePlugin({
-          /* options */
-        }),
-      );
-    },
-  },
+	build: {
+		chainWebpack(chain) {
+			chain.plugin("pkg-name").use(
+				PkgNamePlugin({
+					/* options */
+				}),
+			);
+		},
+	},
 };
 ```
 
@@ -141,17 +140,16 @@ module.exports = {
 import { build } from "esbuild";
 
 build({
-  /* ... */
-  plugins: [
-    require("pkg-name/esbuild")({
-      /* options */
-    }),
-  ],
+	/* ... */
+	plugins: [
+		require("pkg-name/esbuild")({
+			/* options */
+		}),
+	],
 });
 ```
 
 <br></details>
-
 
 <details>
 <summary>Astro</summary><br>
@@ -161,11 +159,11 @@ build({
 import PkgName from "pkg-name/astro";
 
 export default defineConfig({
-  integrations: [
-    PkgName({
-      /* options */
-    }),
-  ],
+	integrations: [
+		PkgName({
+			/* options */
+		}),
+	],
 });
 ```
 
