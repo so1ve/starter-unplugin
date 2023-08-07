@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^0.116.0
     version: 0.116.0(eslint@8.40.0)(prettier@3.0.0)(typescript@5.0.4)(vite@4.3.5)(vitest@0.34.0)
   '@so1ve/prettier-config':
-    specifier: ^0.116.0
-    version: 0.116.0(prettier@3.0.0)
+    specifier: ^0.118.0
+    version: 0.118.0(prettier@3.0.0)
   '@types/node':
     specifier: ^18.16.6
     version: 18.16.6
@@ -1135,6 +1135,26 @@ packages:
       prettier-plugin-curly-and-jsdoc: 0.116.0(prettier@3.0.0)
       prettier-plugin-pkgsort: 0.2.0(prettier@3.0.0)
       prettier-plugin-toml: 0.3.5
+    dev: true
+
+  /@so1ve/prettier-config@0.118.0(prettier@3.0.0):
+    resolution: {integrity: sha512-qtLVjWYVtCxH5+ocM43ws1BPvDvozvJR41mbeEn6pBkt+RfrKl4uPL7sSp3N6OlLlIfuW7Lv8bbML1+MozMsfQ==}
+    peerDependencies:
+      prettier: ^3.0.0
+    dependencies:
+      '@so1ve/prettier-plugin-toml': 0.118.0(prettier@3.0.0)
+      prettier: 3.0.0
+      prettier-plugin-astro: 0.11.0
+      prettier-plugin-curly-and-jsdoc: 0.118.0(prettier@3.0.0)
+      prettier-plugin-pkgsort: 0.2.0(prettier@3.0.0)
+    dev: true
+
+  /@so1ve/prettier-plugin-toml@0.118.0(prettier@3.0.0):
+    resolution: {integrity: sha512-FCwVVPW7j9krDyXlYKU64BgZBInrzlkPKZuvw58/eWXE1Rx13nXY5aLHfn4Ny3eg8khKtUGhMDdzOvpA7jFIMg==}
+    peerDependencies:
+      prettier: ^3.0.0
+    dependencies:
+      prettier: 3.0.0
     dev: true
 
   /@toml-tools/lexer@0.3.5:
@@ -4031,6 +4051,14 @@ packages:
 
   /prettier-plugin-curly-and-jsdoc@0.116.0(prettier@3.0.0):
     resolution: {integrity: sha512-qBFoTZLJOxxepKxZdM6tqGJsCMqze/oA2ODphhuhmhR5echPSIdcmYxCq7zca7rsrCcUzSpGj0/oszuDuvTQTQ==}
+    peerDependencies:
+      prettier: ^3.0.0
+    dependencies:
+      prettier: 3.0.0
+    dev: true
+
+  /prettier-plugin-curly-and-jsdoc@0.118.0(prettier@3.0.0):
+    resolution: {integrity: sha512-t3U6VA68M9mmP3QSmz1dlYy2O+vTbeRH53I+WJuYe1ktgjdT6njNlCt8xn/wAZSHP33nSlvEuvQA09Zwvx/VHg==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
