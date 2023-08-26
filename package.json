@@ -96,7 +96,7 @@
 		"release": "bumpp --commit --push --tag && pnpm publish",
 		"stub": "unbuild --stub",
 		"test": "vitest",
-		"typecheck": "vitest typecheck"
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@nuxt/kit": "^3.4.3",
