@@ -1,31 +1,4 @@
-{"peerDependencies": {
-    "@nuxt/kit": "^3",
-    "@nuxt/schema": "^3",
-    "esbuild": "*",
-    "rollup": "^3",
-    "vite": ">=3",
-    "webpack": "^4 || ^5"
-  },
-  "peerDependenciesMeta": {
-    "webpack": {
-      "optional": true
-    },
-    "rollup": {
-      "optional": true
-    },
-    "vite": {
-      "optional": true
-    },
-    "esbuild": {
-      "optional": true
-    },
-    "@nuxt/kit": {
-      "optional": true
-    },
-    "@nuxt/schema": {
-      "optional": true
-    }
-  },
+{
 	"name": "pkg-name",
 	"version": "0.0.0",
 	"packageManager": "pnpm@8.7.1",
@@ -144,5 +117,33 @@
 		"vite": "^4.3.5",
 		"vitest": "^0.34.0",
 		"webpack": "^5.82.0"
+	},
+	"peerDependencies": {
+		"@nuxt/kit": "^3",
+		"@nuxt/schema": "^3",
+		"esbuild": "*",
+		"rollup": "^3",
+		"vite": ">=3",
+		"webpack": "^4 || ^5"
+	},
+	"peerDependenciesMeta": {
+		"webpack": {
+			"optional": true
+		},
+		"rollup": {
+			"optional": true
+		},
+		"vite": {
+			"optional": true
+		},
+		"esbuild": {
+			"optional": true
+		},
+		"@nuxt/kit": {
+			"optional": true
+		},
+		"@nuxt/schema": {
+			"optional": true
+		}
 	}
 }
