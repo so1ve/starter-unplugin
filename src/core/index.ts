@@ -1,4 +1,4 @@
-import type { UnpluginFactory } from "unplugin";
+import type { UnpluginFactory, createUnplugin} from "unplugin";
 
 import type { Options } from "./types";
 
