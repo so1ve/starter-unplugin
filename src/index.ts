@@ -1,1 +1,1 @@
-export { default } from "./core";
+export { default, unplugin, unpluginFactory } from "./core";
