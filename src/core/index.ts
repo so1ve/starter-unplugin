@@ -10,3 +10,7 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (
 		return code;
 	},
 });
+
+export const unplugin = /* #__PURE__ */ createUnplugin(unpluginFactory)
+
+export default unplugin
