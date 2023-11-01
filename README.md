@@ -66,6 +66,25 @@ module.exports = {
 
 <br></details>
 
+<br></details>
+
+<details>
+<summary>Rspack</summary><br>
+
+```ts
+// rspack.config.js
+module.exports = {
+	/* ... */
+	plugins: [
+		require("pkg-name/rspack")({
+			/* options */
+		}),
+	],
+};
+```
+
+<br></details>
+
 <details>
 <summary>Nuxt</summary><br>
 
