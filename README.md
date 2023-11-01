@@ -66,8 +66,6 @@ module.exports = {
 
 <br></details>
 
-<br></details>
-
 <details>
 <summary>Rspack</summary><br>
 
