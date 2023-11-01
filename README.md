@@ -73,6 +73,9 @@ module.exports = {
 // nuxt.config.ts
 export default defineNuxtConfig({
 	modules: ["pkg-name/nuxt"],
+	pkgName: {
+		/* options */
+	},
 });
 ```
 
