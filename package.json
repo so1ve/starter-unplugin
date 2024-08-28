@@ -94,7 +94,7 @@
 		"unplugin": "^1.5.0"
 	},
 	"devDependencies": {
-		"@antfu/ni": "^0.21.8",
+		"@antfu/ni": "^0.23.0",
 		"@nuxt/schema": "^3.8.0",
 		"@so1ve/eslint-config": "^1.0.0-alpha.16",
 		"@so1ve/prettier-config": "^1.0.0-alpha.16",

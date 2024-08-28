@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@antfu/ni':
-    specifier: ^0.21.8
-    version: 0.21.8
+    specifier: ^0.23.0
+    version: 0.23.0
   '@nuxt/schema':
     specifier: ^3.8.0
     version: 3.8.0(rollup@4.2.0)
@@ -73,8 +73,8 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
 
-  /@antfu/ni@0.21.8:
-    resolution: {integrity: sha512-90X8pU2szlvw0AJo9EZMbYc2eQKkmO7mAdC4tD4r5co2Mm56MT37MIG8EyB7p4WRheuzGxuLDxJ63mF6+Zajiw==}
+  /@antfu/ni@0.23.0:
+    resolution: {integrity: sha512-R5/GkA3PfGewAXLzz6lN5XagunF6PKeDtWt8dbZQXvHfebLS0qEczV+Azg/d+tKgSh6kRBpxvu8oSjARdPtw0A==}
     hasBin: true
     dev: true
 
